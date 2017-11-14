@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Heavy.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	background-color: #eee;
+}
+
+.header-wrapper {
+  padding-bottom: 20px;
+  height: 100px;
+  border-bottom: 1px dashed #cccccc;
+}
+
+.header {
+  margin: 30px;
+  font-size: 42px;
+}
+
+#js-box {
+  background-color: #fad84a;
+  height: 80px;
+  width: 80px;
+  text-align: right;
+  position: relative;
+  display: inline-block;
+}
+
+#js-title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline;
+}
+
+
+/*
+kolory:
+#fad84a - JS
+#eeeeee - background
+#cccccc - border
+*/
