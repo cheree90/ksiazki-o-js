@@ -9,7 +9,7 @@
     <body>
 
 <div class="header-wrapper">
-      <div class="header">
+      <div class="title">
             <div id="js-box">
               <div id="js-title">
                 JS
@@ -19,13 +19,37 @@
       </div>
 </div>
 
-<div class="sort">
+<div class="utils-wrapper">
+	<div class="utils">
+		<p class="utils-header">Sortuj po</p>
+	</div>
+	  <ul>
+	  <li>
+	    <input type="radio" id="sort-pages" name="sort_option">
+	    <label class="radio" for="sort-pages">ilości stron</label>
+	  </li>
+	  <li>
+	    <input type="radio" id="sort-date" name="sort_option">
+	    <label class="radio" for="sort-date">dacie wydania</label>
+	  </li>
+	  <li>
+	    <input type="radio" id="sort-author" name="sort_option">
+	    <label class="radio" for="sort-author">nazwisku autora</label>
+	  </li>
+	</ul>
 </div>
 
-<div class="filter">
+<div class="utils-wrapper">
+  <div class="utils">
+    <p class="utils-header">Pokaż tylko</p>
+    <label class="utils-text">Powyżej</label>
+    <input type="text" id="filter-pages" name="filter_pages">
+    <label class="utils-text">stron</label>
+  </div>
 </div>
 
 <div class="clear">
+  <button class="clear-button">Wyczyść</button>
 </div>
 
 <div class="main">
