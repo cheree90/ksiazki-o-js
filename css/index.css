@@ -23,12 +23,24 @@ body, html {
 .header-wrapper {
   padding-bottom: 20px;
   height: 100px;
-  border-bottom: 1px dashed #cccccc;
+  border-bottom: 1px dashed #ccc;
+	margin-left: 30px;
+	margin-top: 30px;
 }
 
 .title {
-  font-size: 45px;
+  font-size: 50px;
   margin: 30px;
+  position: fixed;
+}
+
+.title-box {
+  background-color: #fad84a;
+  height: 80px;
+  width: 80px;
+  text-align: right;
+  position: fixed;
+  display: inline-block;
 }
 
 .utils {
@@ -45,7 +57,7 @@ body, html {
 
 .utils-header {
   font-size: 28px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;ssssssssssss
 }
 
 .utils-text {
@@ -88,22 +100,6 @@ ul, li, label[type=radio] {
 input[type=text] {
   width: 40px;
   height: 25px;
-}
-
-#js-box {
-  background-color: #fad84a;
-  height: 80px;
-  width: 80px;
-  text-align: right;
-  position: relative;
-  display: inline-block;
-}
-
-#js-title {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: inline;
 }
 
 
