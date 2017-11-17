@@ -1,0 +1,220 @@
+/*
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url('../fonts/Lato-Heavy.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('../fonts/Lato-Regular.ttf');
+}
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+  font-weight: bold;
+	background-color: #eee;
+}
+
+.header-wrapper {
+	border-bottom: 1px dashed #ccc;
+}
+
+.header {
+	margin-left: 30px;
+	margin-top: 30px;
+	padding-bottom: 20px;
+  height: 100px;
+}
+
+.title {
+  font-size: 50px;
+  margin: 30px;
+  position: absolute;
+}
+
+.title-box {
+  background-color: #fad84a;
+  height: 80px;
+  width: 80px;
+  text-align: right;
+  position: absolute;
+  display: inline-block;
+}
+
+.utils-wrapper {
+  margin: 30px;
+  padding-bottom: 20px;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.utils {
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+}
+
+.utils-header {
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+}
+
+.utils-text {
+  font-size: 18px;
+}
+
+.clear-wrapper {
+	width: 100vw;
+	height: 50px;
+}
+
+.clear {
+  padding-bottom: 20px;
+  font-size: 28px;
+  position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+}
+
+.clear-button {
+  background-color: #aaa;
+  border: none;
+	border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+	background-color: #7c7c7c;
+}
+
+.main {
+	margin: 30px;
+  padding-bottom: 20px;
+  height: 250px;
+	position: relative;
+	border: 2px dotted blue;
+}
+
+.book-number {
+	font-size: 70px;
+	color: #d7d7d7;
+	position: absolute;
+	top:0;
+	padding-right: 15px;
+}
+
+.book-cover {
+	position: absolute;
+	left: 60px;
+}
+
+.book-description {
+	position: absolute;
+	left: 250px;
+	height: 236px;
+	text-align: center;
+	border: 2px dotted red;
+}
+
+ul, li, label[type=radio] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type=text] {
+  width: 50px;
+  height: 30px;
+	border: none;
+}
+
+.book-line {
+	width: 50px;
+	margin: auto;
+}
+
+hr {
+	color: #eb3324;
+	border-top: 3px solid #eb3324;
+}
+
+.book-title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.book-author {
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.book-date-pages {
+	font-style: italic;
+	color: #9a999a;
+	margin: 0;
+}
+
+.book-link {
+	font-style: italic;
+	color: #9a999a;
+	display: inline;
+}
+
+.book-elements {
+	position: absolute;
+   margin: auto;
+   right: 0;
+   left: 0;
+   width: inherit;
+   height: auto;
+	 display: flex;
+	 border: 2px dotted green;
+}
+
+.book-left {
+	display: inline;
+	width: 400px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.book-right {
+	display: inline;
+	width: 400px;
+	text-align: left;
+}
+
+a {
+	display: inline;
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
+a:link {
+	color: #eb3324;
+}
+
+a:hover {
+	color: #ff675b
+}

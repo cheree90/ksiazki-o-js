@@ -1,4 +1,4 @@
-[
+books = [
   {
     "cover": {
       "large": "https://covers.oreillystatic.com/images/9780596517748/lrg.jpg",

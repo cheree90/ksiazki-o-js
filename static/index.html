@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../css/index.css">
-        <script type="text/javascript" src="./js/books.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/books.js"></script>
+        <script type="text/javascript" src="/js/books.json"></script>
+        <script type="text/javascript" src="/js/bookViewGenerator.js"></script>
+        <script type="text/javascript" src="/js/Clear.js"></script>
         <title>Książki o Javascript</title>
     </head>
     <body>
@@ -42,44 +46,18 @@
   <div class="utils">
     <p class="utils-header">Pokaż tylko</p>
     <label class="utils-text">Powyżej</label>
-    <input type="text" id="filterPages" name="filter_pages">
+    <input type="number" id="filterPages" min="0" onchange="renderBooks()">
     <label class="utils-text">stron</label>
   </div>
 </div>
 
 <div class="clear-wrapper">
   <div class="clear">
-    <button class="clear-button">Wyczyść</button>
+    <button class="clear-button" id="clear" onclick="clearFilters()">Wyczyść</button>
   </div>
 </div>
 
-<div class="main">
-  <div class="book-number">
-    <label>1</label>
-  </div>
-  <div class="book-cover" id="bookCover">
-    <img src="https://covers.oreillystatic.com/images/9780596517748/cat.gif">
-  </div>
-<div class="book-description">
-  <p class="book-title">JavaScript: The Good Parts</p>
-  <div class="book-line">
-    <hr>
-  </div>
-    <p class="book-author">By Douglas Crockford</p>
-    <div class="book-elements">
-      <div class="book-left">
-        <p class="book-date-pages">Release Date: </p>
-        <p class="book-date-pages">Pages: </p>
-        <p class="book-link">Link: </p>
-      </div>
-      <div class="book-right">
-        <p class="book-date-pages"> 12/2008</p>
-        <p class="book-date-pages"> 172</p>
-        <p class="book-link"><a href="http://test"> shop</a></p>
-      </div>
-  </div>
-</div>
-
+<div class="main" id="main">
 </div>
 
     </body>
