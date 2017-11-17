@@ -34,7 +34,7 @@ body, html {
 .title {
   font-size: 50px;
   margin: 30px;
-  position: fixed;
+  position: absolute;
 }
 
 .title-box {
@@ -42,7 +42,7 @@ body, html {
   height: 80px;
   width: 80px;
   text-align: right;
-  position: fixed;
+  position: absolute;
   display: inline-block;
 }
 
@@ -67,16 +67,22 @@ body, html {
   font-size: 18px;
 }
 
+.clear-wrapper {
+	width: 100vw;
+	height: 50px;
+	border: 2px dotted orange;
+}
+
 .clear {
   padding-bottom: 20px;
   font-size: 28px;
   position: absolute;
-   margin: auto;
-   right: 0;
-   left: 0;
-   width: 100px;
-   height: 100px;
-	 z-index = 1;
+	margin: auto;
+	right: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
 }
 
 .clear-button {
@@ -100,8 +106,9 @@ body, html {
 .main {
 	margin: 30px;
   padding-bottom: 20px;
-  height: auto;
+  height: 250px;
 	position: relative;
+	border: 2px dotted blue;
 }
 
 .book-number {
@@ -119,7 +126,10 @@ body, html {
 
 .book-description {
 	position: absolute;
-	left: 300px;
+	left: 250px;
+	height: 236px;
+	text-align: center;
+	border: 2px dotted red;
 }
 
 ul, li, label[type=radio] {
@@ -139,6 +149,7 @@ input[type=text] {
 
 .book-line {
 	width: 50px;
+	margin: auto;
 }
 
 hr {
@@ -160,6 +171,7 @@ hr {
 .book-date-pages {
 	font-style: italic;
 	color: #9a999a;
+	margin: 0;
 }
 
 .book-link {
@@ -173,8 +185,23 @@ hr {
    margin: auto;
    right: 0;
    left: 0;
-   width: 200px;
-   height: 100px;
+   width: inherit;
+   height: auto;
+	 display: flex;
+	 border: 2px dotted green;
+}
+
+.book-left {
+	display: inline;
+	width: 400px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.book-right {
+	display: inline;
+	width: 400px;
+	text-align: left;
 }
 
 a {
