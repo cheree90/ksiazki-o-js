@@ -1,8 +1,12 @@
-function bookViewGenerate(bookNumber, bookCover, bookTitle, bookAuthor, bookReleaseDate, bookPages, bookLink) {
+function bookViewGenerate(bookNumber, bookCoverSmall, bookCoverLarge, bookTitle, bookAuthor, bookReleaseDate, bookPages, bookLink) {
 
   return '<div class="main"><div class="book-number" id="bookNumber"><label>'+bookNumber+'</label></div>'+
-    '<div class="book-cover" id="bookCover">' +
-      '<img src="'+bookCover+'">' +
+    '<div class="book-cover-small">' +
+      '<img src="'+bookCoverSmall+'" id="bookCoverSmall'+bookNumber+'" onclick="bookCoverOpen('+bookNumber+')">' +
+    '</div>' +
+    '<div class="book-cover-large-wrapper" id="bookCoverLargeWrapper'+bookNumber+'">' +
+      '<span id ="close'+bookNumber+'" class="close">&times;</span>' +
+      '<img class="book-cover-large" src="'+bookCoverLarge+'">' +
     '</div>' +
     '<div class="book-description">' +
     '<p class="book-title" id="bookTitle">'+bookTitle+'</p>' +
