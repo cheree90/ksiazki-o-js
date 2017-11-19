@@ -9,6 +9,7 @@
         <script type="text/javascript" src="/js/books.json"></script>
         <script type="text/javascript" src="/js/bookViewGenerator.js"></script>
         <script type="text/javascript" src="/js/Clear.js"></script>
+        <script type="text/javascript" src="/js/BookViewSort.js"></script>
         <title>Książki o Javascript</title>
     </head>
     <body>
@@ -28,15 +29,15 @@
 	</div>
 	  <ul>
 	  <li>
-	    <input type="radio" id="sortPages" name="sort_option">
+	    <input type="radio" id="sortPages" name="sort_option" onclick="bookViewSortByPages()">
 	    <label class="radio" for="sort-pages">ilości stron</label>
 	  </li>
 	  <li>
-	    <input type="radio" id="sortDate" name="sort_option">
+	    <input type="radio" id="sortDate" name="sort_option" onclick="bookViewSortByDate()">
 	    <label class="radio" for="sort-date">dacie wydania</label>
 	  </li>
 	  <li>
-	    <input type="radio" id="sortAuthor" name="sort_option">
+	    <input type="radio" id="sortAuthor" name="sort_option" onclick="bookViewSortByAuthor()">
 	    <label class="radio" for="sort-author">nazwisku autora</label>
 	  </li>
 	</ul>

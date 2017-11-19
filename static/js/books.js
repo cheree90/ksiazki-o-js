@@ -9,9 +9,7 @@ function renderBooks() {
       books[i].author, books[i].releaseDate, books[i].pages, books[i].link));
     }
   }
-
 }
-
 
 $(document).ready(function(){
   renderBooks();
