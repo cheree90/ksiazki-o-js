@@ -1,15 +1,7 @@
 function bookCoverOpen(number) {
-    // Get the modal
-  var modal = document.getElementById('bookCoverLargeWrapper'+number);
-  modal.style.display = "block";
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementById("close"+number);
-
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
-
+  modal = $('#bookCoverLargeWrapper'+number);
+  modal.css("display","block");
+  $('#close'+number).click(function() {
+    modal.css("display","none");
+  });
 }

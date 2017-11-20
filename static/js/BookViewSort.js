@@ -1,11 +1,13 @@
 function bookViewSortByPages() {
+  saveSortPages();
   books.sort(function(a, b) {
       return parseInt(a.pages) - parseInt(b.pages);
   });
-    renderBooks();
+  renderBooks();
 }
 
 function bookViewSortByDate() {
+  saveSortDate();
   books.sort(function(a, b) {
     var aDate = a.releaseDate.split("/");
     var bDate = b.releaseDate.split("/");
@@ -15,6 +17,7 @@ function bookViewSortByDate() {
 }
 
 function bookViewSortByAuthor() {
+  saveSortAuthor();
   books.sort(function(a, b) {
     var aAuthor = a.author.split(" ");
     var bAuthor = b.author.split(" ");

@@ -10,7 +10,9 @@
         <script type="text/javascript" src="/js/bookViewGenerator.js"></script>
         <script type="text/javascript" src="/js/Clear.js"></script>
         <script type="text/javascript" src="/js/BookViewSort.js"></script>
+        <script type="text/javascript" src="/js/BookViewFilter.js"></script>
         <script type="text/javascript" src="/js/BookCoverOpen.js"></script>
+        <script type="text/javascript" src="/js/LocalStorage.js"></script>
         <title>Książki o Javascript</title>
     </head>
     <body>
@@ -48,7 +50,7 @@
   <div class="utils">
     <p class="utils-header">Pokaż tylko</p>
     <label class="utils-text">Powyżej</label>
-    <input type="number" id="filterPages" min="0" onchange="renderBooks()">
+    <input type="number" id="filterPages" min="0" onchange="bookViewFilter()">
     <label class="utils-text">stron</label>
   </div>
 </div>
@@ -59,7 +61,7 @@
   </div>
 </div>
 
-<div class="main" id="main">
+<div class="main-wrapper" id="main-wrapper">
 </div>
 
     </body>
