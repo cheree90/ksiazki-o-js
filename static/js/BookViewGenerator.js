@@ -2,7 +2,7 @@ function bookViewGenerate(bookNumber, bookCoverSmall, bookCoverLarge, bookTitle,
 
   return '<div class="main"><div class="book-number" id="bookNumber"><label>'+bookNumber+'</label></div>'+
     '<div class="book-cover-small-wrapper">' +
-      '<img src="'+bookCoverSmall+'" class="book-cover-small "id="bookCoverSmall'+bookNumber+'" onclick="bookCoverOpen('+bookNumber+')">' +
+      '<img src="'+bookCoverSmall+'" class="book-cover-small "id="bookCoverSmall'+bookNumber+'" onclick="app.bookCoverOpen('+bookNumber+')">' +
     '</div>' +
     '<div class="book-cover-large-wrapper" id="bookCoverLargeWrapper'+bookNumber+'">' +
       '<span id ="close'+bookNumber+'" class="close">&times;</span>' +

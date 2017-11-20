@@ -23,7 +23,7 @@ function clearSortAll() {
 }
 
 function saveFilter() {
-  filter = $('#filterPages').val();
+  var filter = $('#filterPages').val();
   localStorage.setItem("filter", filter);
 }
 
@@ -39,11 +39,10 @@ function loadFromLocalStorage() {
   $('#filterPages').val(filter);
 
   if (sortPages) {
-    bookViewSortByPages();
+    app.bookViewSortByPages();
   } else if (sortDate) {
-    bookViewSortByDate();
+    app.bookViewSortByDate();
   } else if (sortAuthor) {
-    bookViewSortByAuthor();
-
+    app.bookViewSortByAuthor();
   }
 }

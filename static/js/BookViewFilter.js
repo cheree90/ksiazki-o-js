@@ -1,4 +1,0 @@
-function bookViewFilter() {
-  saveFilter();
-  renderBooks();
-}
