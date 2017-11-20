@@ -16,6 +16,12 @@ function saveSortAuthor() {
   localStorage.setItem("sortDate", false);
 }
 
+function clearSortAll() {
+  localStorage.setItem("sortPages", false);
+  localStorage.setItem("sortDate", false);
+  localStorage.setItem("sortAuthor", false);
+}
+
 function saveFilter() {
   filter = $('#filterPages').val();
   localStorage.setItem("filter", filter);
