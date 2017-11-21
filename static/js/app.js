@@ -30,7 +30,7 @@ app = (function() {
     }
   }
 
-  // ----- clear -----
+// ----- clear -----
 
   function clearFilters() {
     $('#filterPages').val('');
@@ -41,7 +41,7 @@ app = (function() {
     renderBooks();
   };
 
-  // ----- modal -----
+// ----- modal -----
 
   function bookCoverOpen(number) {
     var modal = $('#bookCoverLargeWrapper'+number);
@@ -51,14 +51,14 @@ app = (function() {
     });
   }
 
-  // ----- filter -----
+// ----- filter -----
 
   function bookViewFilter() {
     saveFilter();
     renderBooks();
   }
 
-  // ----- sort -----
+// ----- sort -----
 
   function bookViewSortByPages() {
     saveSortPages();
@@ -92,6 +92,7 @@ app = (function() {
 })();
 
 // ----- onload -----
+
 $(document).ready(function(){
   app.start();
 });

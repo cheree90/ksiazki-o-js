@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 760px) {
 	.main {
-	  display: block;
+		display: block;
 	  padding-bottom: 20px;
 	  height: 250px;
 	  width: 100vw;
@@ -29,7 +29,7 @@
 	}
 }
 
-@media screen and (min-width: 760px) and (max-width: 1023px) {
+@media screen and (min-width: 760px) and (max-width: 1024px) {
 	.main {
 	  height: 500px;
 	  width: 300px;
@@ -47,7 +47,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1679px) {
+@media screen and (min-width: 1024px) and (max-width: 1680px) {
 	.main-wrapper {
 	  width: 1000px;
 		top: 150px;
@@ -144,6 +144,7 @@ body, html {
 .title {
   font-size: 50px;
   margin: 30px;
+	width: 100vw;
   position: absolute;
 }
 
@@ -282,8 +283,11 @@ ul, li, label[type=radio] {
   margin: 0;
   padding: 0;
   overflow: auto;
-  cursor: pointer;
   font-size: 18px;
+}
+
+input[type=radio] {
+	cursor: pointer;
 }
 
 input[type=number] {
