@@ -1,48 +1,48 @@
 function saveSortPages() {
-  localStorage.setItem("sortPages", true);
-  localStorage.setItem("sortDate", false);
-  localStorage.setItem("sortAuthor", false);
+  var sortRadioButton = {
+    sortPages: true,
+    sortDate: false,
+    sortAuthor: false
+  };
+  localStorage.setItem("sortRadioButton", JSON.stringify(sortRadioButton));
 }
 
 function saveSortDate() {
-  localStorage.setItem("sortDate", true);
-  localStorage.setItem("sortPages", false);
-  localStorage.setItem("sortAuthor", false);
+  var sortRadioButton = {
+    sortPages: false,
+    sortDate: true,
+    sortAuthor: false
+  };
+  localStorage.setItem("sortRadioButton", JSON.stringify(sortRadioButton));
 }
 
 function saveSortAuthor() {
-  localStorage.setItem("sortAuthor", true);
-  localStorage.setItem("sortPages", false);
-  localStorage.setItem("sortDate", false);
+  var sortRadioButton = {
+    sortPages: false,
+    sortDate: false,
+    sortAuthor: true
+  };
+  localStorage.setItem("sortRadioButton", JSON.stringify(sortRadioButton));
 }
 
 function clearSortAll() {
-  localStorage.setItem("sortPages", false);
-  localStorage.setItem("sortDate", false);
-  localStorage.setItem("sortAuthor", false);
+  var sortRadioButton = {
+    sortPages: false,
+    sortDate: false,
+    sortAuthor: false
+  };
+  localStorage.setItem("sortRadioButton", JSON.stringify(sortRadioButton));
 }
 
-function saveFilter() {
-  var filter = $('#filterPages').val();
+function saveFilter(filter) {
   localStorage.setItem("filter", filter);
 }
 
 function loadFromLocalStorage() {
-  var sortPages = localStorage.getItem("sortPages") == "true";
-  var sortDate = localStorage.getItem("sortDate") == "true";
-  var sortAuthor = localStorage.getItem("sortAuthor") == "true";
+  var sortRadioButton = JSON.parse(localStorage.getItem("sortRadioButton"));
   var filter = localStorage.getItem("filter");
-
-  $('#sortPages').prop("checked", sortPages);
-  $('#sortDate').prop("checked", sortDate);
-  $('#sortAuthor').prop("checked", sortAuthor);
-  $('#filterPages').val(filter);
-
-  if (sortPages) {
-    app.bookViewSortByPages();
-  } else if (sortDate) {
-    app.bookViewSortByDate();
-  } else if (sortAuthor) {
-    app.bookViewSortByAuthor();
-  }
+  return {
+    sortRadioButton: sortRadioButton,
+    filter: filter
+  };
 }

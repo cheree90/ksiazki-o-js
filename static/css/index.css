@@ -3,9 +3,9 @@
 @media screen and (max-width: 760px) {
 	.main {
 		display: block;
-	  padding-bottom: 20px;
-	  height: 250px;
-	  width: 100vw;
+		padding-bottom: 20px;
+		height: 250px;
+		width: 100vw;
 	}
 
 	.clear-wrapper {
@@ -23,17 +23,17 @@
 	}
 
 	.book-description {
-	  left: 250px;
-	  height: 236px;
-	  width: 250px;
+		left: 250px;
+		height: 236px;
+		width: 250px;
 	}
 }
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
 	.main {
-	  height: 500px;
-	  width: 300px;
-	  display: inline-block;
+		height: 500px;
+		width: 300px;
+		display: inline-block;
 	}
 
 	.clear-wrapper {
@@ -41,32 +41,32 @@
 	}
 
 	.book-description {
-	  margin:30px;
-	  top: 220px;
-	  height: auto;
+		margin: 30px;
+		top: 220px;
+		height: auto;
 	}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1680px) {
 	.main-wrapper {
-	  width: 1000px;
+		width: 1000px;
 		top: 150px;
 		left: 250px;
 	}
 
 	.main {
-	  height: 500px;
-	  width: 300px;
-	  display: inline-block;
-	  top:0;
+		height: 500px;
+		width: 300px;
+		display: inline-block;
+		top: 0;
 	}
 
 	.utils-wrapper {
-	  left: 0;
-	  width: 200px;
-	  position: relative;
-	  display: block;
-	  border-bottom: 1px solid #ccc;
+		left: 0;
+		width: 200px;
+		position: relative;
+		display: block;
+		border-bottom: 1px solid #ccc;
 	}
 
 	.clear-wrapper {
@@ -77,33 +77,33 @@
 	}
 
 	.book-description {
-	  margin:30px;
-	  top: 220px;
-	  float: left;
-	  height: auto;
+		margin: 30px;
+		top: 220px;
+		float: left;
+		height: auto;
 	}
 }
 
 @media screen and (min-width: 1680px) {
 	.main-wrapper {
-	  width: 1400px;
+		width: 1400px;
 		top: 150px;
 		left: 250px;
 	}
 
 	.main {
-	  height: 500px;
-	  width: 300px;
-	  display: inline-block;
-	  top:0;
+		height: 500px;
+		width: 300px;
+		display: inline-block;
+		top: 0;
 	}
 
 	.utils-wrapper {
-	  left: 0;
-	  width: 200px;
-	  position: relative;
-	  display: block;
-	  border-bottom: 1px solid #ccc;
+		left: 0;
+		width: 200px;
+		position: relative;
+		display: block;
+		border-bottom: 1px solid #ccc;
 	}
 
 	.clear-wrapper {
@@ -114,9 +114,9 @@
 	}
 
 	.book-description {
-	  margin:30px;
-	  top: 220px;
-	  height: auto;
+		margin: 30px;
+		top: 220px;
+		height: auto;
 	}
 }
 
@@ -126,50 +126,43 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: "Lato", sans-serif;
-  font-weight: bold;
+	font-weight: bold;
 	background-color: #eee;
 }
 
 .header-wrapper {
+	padding-bottom: 20px;
 	border-bottom: 1px dashed #ccc;
 }
 
 .header {
+	background-color: #fad84a;
+	height: 80px;
+	width: 80px;
 	margin-left: 30px;
 	margin-top: 30px;
-	padding-bottom: 20px;
-  height: 100px;
 }
 
 .title {
-  font-size: 50px;
-  margin: 30px;
+	font-size: 50px;
+	margin: 30px;
 	width: 100vw;
-  position: absolute;
-}
-
-.title-box {
-  background-color: #fad84a;
-  height: 80px;
-  width: 80px;
-  text-align: right;
-  position: absolute;
-  display: inline-block;
+	position: absolute;
 }
 
 .utils-wrapper {
-  margin: 30px;
-  padding-bottom: 20px;
-  height: auto;
-  border-bottom: 1px solid #ccc;
+	margin: 30px;
+	padding-bottom: 20px;
+	height: auto;
+	border-bottom: 1px solid #ccc;
 }
 
 .utils-header {
-  font-size: 28px;
+	font-size: 28px;
 }
 
 .utils-text {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .clear-wrapper {
@@ -177,29 +170,28 @@ body, html {
 }
 
 .clear {
-  padding-bottom: 20px;
-  font-size: 28px;
-  position: absolute;
+	padding-bottom: 20px;
+	font-size: 28px;
+	position: absolute;
 	margin: auto;
 	right: 0;
 	left: 0;
 	width: 100px;
 	height: 100px;
-	z-index: 1;
 }
 
 .clear-button {
-  background-color: #aaa;
-  border: none;
+	background-color: #aaa;
+	border: none;
 	border-radius: 5px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 4px 2px;
-  cursor: pointer;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
 .clear-button:hover {
@@ -207,7 +199,7 @@ body, html {
 }
 
 .main-wrapper {
-  position: absolute;
+	position: absolute;
 }
 
 .main {
@@ -219,7 +211,6 @@ body, html {
 	font-size: 70px;
 	color: #d7d7d7;
 	position: absolute;
-	top:0;
 	padding-right: 15px;
 }
 
@@ -232,20 +223,20 @@ body, html {
 .book-cover-large-wrapper {
 	display: none;
 	position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(255,255,255);
-  background-color: rgba(255,255,255,0.8);
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,0.8);
 }
 
 img.book-cover-small {
 	display: block;
-	max-height:236px;
+	max-height: 236px;
 	max-width: 180px;
 	height: auto;
 	width: auto;
@@ -253,37 +244,36 @@ img.book-cover-small {
 
 .book-cover-large {
 	margin: auto;
-  display: block;
+	display: block;
 }
 
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
 }
 
 .close:hover, .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .book-description {
-  position: relative;
-  text-align: center;
-  float: left;
+	position: relative;
+	text-align: center;
+	float: left;
 }
 
 ul, li, label[type=radio] {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
-  font-size: 18px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
 }
 
 input[type=radio] {
@@ -291,15 +281,15 @@ input[type=radio] {
 }
 
 input[type=number] {
-  width: 60px;
-  height: 35px;
+	width: 60px;
+	height: 35px;
 	border: none;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
-  margin: 0;
+	margin: 0;
 }
 
 .book-line {
@@ -323,43 +313,43 @@ hr {
 	font-style: italic;
 }
 
-.book-date-pages {
+p.book-date-pages {
 	font-style: italic;
 	color: #9a999a;
 	margin: 0;
+	display: inline;
 }
 
-.book-link {
+p.book-link {
 	font-style: italic;
 	color: #9a999a;
 	display: inline;
 }
 
 .book-elements {
-	position: absolute;
-	margin: auto;
-	right: 0;
-	left: 0;
-	width: inherit;
-	height: auto;
-	display: flex;
+	text-align: center;
+	margin: 0;
+	display: inline;
+	table-layout: fixed;
+	width: 300px;
+}
+
+td {
+	width: 50%;
 }
 
 .book-left {
-	display: inline;
-	width: 400px;
 	text-align: right;
+	white-space: nowrap;
 	padding-right: 5px;
 }
 
 .book-right {
-	display: inline;
-	width: 400px;
 	text-align: left;
+	white-space: nowrap;
 }
 
 a {
-	display: inline;
 	font-weight: normal;
 	font-style: italic;
 	text-decoration: underline;

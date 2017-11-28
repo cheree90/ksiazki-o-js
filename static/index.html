@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="/css/index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="/js/app.js"></script>
-        <script type="text/javascript" src="/js/library.js"></script>
+        <script type="text/javascript" src="/js/services.js"></script>
         <script type="text/javascript" src="/js/bookViewGenerator.js"></script>
         <script type="text/javascript" src="/js/localStorage.js"></script>
         <title>Książki o Javascript</title>
@@ -15,7 +15,6 @@
 
   <div class="header-wrapper">
     <div class="header">
-    <div class="title-box"></div>
       <div class="title">
         <label>JS​‌’​‌owe książki</label>
       </div>
@@ -28,15 +27,15 @@
 	</div>
 	  <ul>
 	  <li>
-	    <input type="radio" id="sortPages" name="sort_option" onclick="app.bookViewSortByPages()">
+	    <input type="radio" id="sortPages" name="sort_option">
 	    <label class="radio" for="sort-pages">ilości stron</label>
 	  </li>
 	  <li>
-	    <input type="radio" id="sortDate" name="sort_option" onclick="app.bookViewSortByDate()">
+	    <input type="radio" id="sortDate" name="sort_option">
 	    <label class="radio" for="sort-date">dacie wydania</label>
 	  </li>
 	  <li>
-	    <input type="radio" id="sortAuthor" name="sort_option" onclick="app.bookViewSortByAuthor()">
+	    <input type="radio" id="sortAuthor" name="sort_option">
 	    <label class="radio" for="sort-author">nazwisku autora</label>
 	  </li>
 	</ul>
@@ -46,14 +45,14 @@
   <div class="utils">
     <p class="utils-header">Pokaż tylko</p>
     <label class="utils-text">Powyżej</label>
-    <input type="number" id="filterPages" min="0" onchange="app.bookViewFilter()">
+    <input type="number" id="filterPages" min="0">
     <label class="utils-text">stron</label>
   </div>
 </div>
 
 <div class="clear-wrapper">
   <div class="clear">
-    <button class="clear-button" id="clear" onclick="app.clearFilters()">Wyczyść</button>
+    <button class="clear-button" id="clear">Wyczyść</button>
   </div>
 </div>
 

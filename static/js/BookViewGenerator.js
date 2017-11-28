@@ -1,31 +1,32 @@
 function bookViewGenerate(bookNumber, bookCoverSmall, bookCoverLarge, bookTitle, bookAuthor, bookReleaseDate, bookPages, bookLink) {
 
-  return '<div class="main"><div class="book-number" id="bookNumber"><label>'+bookNumber+'</label></div>'+
-    '<div class="book-cover-small-wrapper">' +
-      '<img src="'+bookCoverSmall+'" class="book-cover-small "id="bookCoverSmall'+bookNumber+'" onclick="app.bookCoverOpen('+bookNumber+')">' +
-    '</div>' +
-    '<div class="book-cover-large-wrapper" id="bookCoverLargeWrapper'+bookNumber+'">' +
-      '<span id ="close'+bookNumber+'" class="close">&times;</span>' +
-      '<img class="book-cover-large" src="'+bookCoverLarge+'">' +
-    '</div>' +
-    '<div class="book-description">' +
-    '<p class="book-title" id="bookTitle">'+bookTitle+'</p>' +
-    '<div class="book-line">' +
-      '<hr>' +
-    '</div>' +
-      '<p class="book-author" id="bookAuthor">'+bookAuthor+'</p>' +
-      '<div class="book-elements">' +
-        '<div class="book-left">' +
-          '<p class="book-date-pages">Release Date: </p>' +
-          '<p class="book-date-pages">Pages: </p>' +
-          '<p class="book-link">Link: </p>' +
-        '</div>' +
-        '<div class="book-right">' +
-          '<p class="book-date-pages" id="bookDate">'+bookReleaseDate+'</p>' +
-          '<p class="book-date-pages" id="bookPages">'+bookPages+'</p>' +
-          '<p class="book-link" id="bookLink"><a href="'+bookLink+'"> shop</a></p>' +
-        '</div>' +
-    '</div>' +
-    '</div>' +
-  '</div>';
+  return `<div class="main"><div class="book-number"><span>${bookNumber}</span></div>
+  <div class="book-cover-small-wrapper">
+    <img src="${bookCoverSmall}" class="book-cover-small "id="bookCoverSmall${bookNumber}">
+  </div>
+  <div class="book-cover-large-wrapper" id="bookCoverLargeWrapper${bookNumber}">
+    <span id="close${bookNumber}" class="close">&times;</span>
+    <img class="book-cover-large" src="${bookCoverLarge}">
+  </div>
+  <div class="book-description">
+    <p class="book-title">${bookTitle}</p>
+    <div class="book-line">
+      <hr>
+    </div>
+    <p class="book-author">${bookAuthor}</p>
+    <table class="book-elements">
+      <tr>
+        <td class="book-left"><p class="book-date-pages">Release date:</p></td>
+        <td class="book-right"><p class="book-date-pages">${bookReleaseDate}</p></td>
+      </tr>
+      <tr>
+        <td class="book-left"><p class="book-date-pages">Pages:</p></td>
+        <td class="book-right"><p class="book-date-pages">${bookPages}</p></td>
+      </tr>
+      <tr>
+        <td class="book-left"><p class="book-link">Link:</p></td>
+        <td class="book-right"><p class="book-link"><a href="${bookLink}"> shop</a></p></td>
+      </tr>
+    </table>
+  </div>`;
 };
